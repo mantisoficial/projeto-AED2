@@ -1,3 +1,8 @@
+// Questão 1766 - O Elfo das Trevas aprovada pelo URI
+// Feita para o projeto da Unidade 3 de AED2-2020/2
+// Arthur Moura Bernardo - 201905523
+// Pietro Niero Roque - 201905550
+
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
