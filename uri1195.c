@@ -1,4 +1,4 @@
-//1195 - Ãrvore BinÃ¡ria de Busca
+//1195 - Árvore Binária de Busca
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
