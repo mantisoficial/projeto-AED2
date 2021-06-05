@@ -1,3 +1,4 @@
+//1195 - Ãrvore BinÃ¡ria de Busca
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
@@ -5,8 +6,8 @@
 
 struct node
 {
-    int data;
     struct node *esq;
+    int data;
     struct node *dir;
 };
 typedef struct node Node;
@@ -16,16 +17,13 @@ int tipo;
 Node *AchaRaiz(Node *r, int v)
 {
     if (r == NULL)
-        /* Node vazia */
         return NULL;
     else if (v <= r->data)
-        /* Novo noh deve ficar a esquerda de r */
         if (r->esq == NULL)
             return r;
         else
             return AchaRaiz(r->esq, v);
     else
-        /* Novo noh deve ficar a direita de r */
         if (r->dir == NULL)
         return r;
     else
@@ -34,6 +32,7 @@ Node *AchaRaiz(Node *r, int v)
 
 int ImprimeNode(Node *r)
 {
+    if (r != NULL)
     {
         if (tipo == 1)
         {
@@ -54,8 +53,10 @@ int ImprimeNode(Node *r)
             printf(" %d", r->data);
         }
     }
+
     return 0;
 }
+
 int main()
 {
     Node *raiz, *pai, *aux;
